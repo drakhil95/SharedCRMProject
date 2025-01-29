@@ -6,6 +6,7 @@ import java.time.Duration;
 import java.util.Properties;
 import java.util.Random;
 
+import org.apache.commons.math3.stat.descriptive.summary.Product;
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -24,25 +25,19 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.Status;
 import com.comcast.crm.basetest.BaseClass;
 import com.comcast.crm.generic.fileutility.ExcelUtility;
-import com.comcast.crm.generic.fileutility.FileUtility;
 import com.comcast.crm.generic.webdriverutility.JavaUtility;
 import com.comcast.crm.generic.webdriverutility.UtilityClassObject;
-import com.comcast.crm.listenerUtility.ListenerImplementationClass;
-import com.comcast.crm.objectrepositoryutility.HomePage;
-import com.comcast.crm.objectrepositoryutility.LoginPage;
-import com.comcast.crm.objectrepositoryutility.ProductIfoPage;
-import com.comcast.crm.objectrepositoryutility.ProductPage;
-import com.comcast.crm.objectrepositoryutility.createProductPage;
+import com.comcast.crm.objectrepository.HomePage;
 
-@Listeners(ListenerImplementationClass.class)
+@Listeners(com.comcast.crm.listenerutility.ListenerImpClass.class)
 public class CreateProducttest extends BaseClass{
 		@Test
 		public void createProduct() throws InterruptedException, EncryptedDocumentException, IOException {
 			String prodname = eLib.getDataFromExcel("product", 1, 2)+jLib.getRandomNumber();
 			UtilityClassObject.getTest().log(Status.INFO, "read data from excel");
 			HomePage hp=new HomePage(driver);
-			ProductPage pp=new ProductPage(driver);
-			createProductPage cp=new createProductPage(driver);
+			Product pp=new ProductPage(driver);
+			createProduct(); cp=new createProductPage(driver);
 			ProductIfoPage cip=new ProductIfoPage(driver);
 			
 			hp.getProductLink().click();
