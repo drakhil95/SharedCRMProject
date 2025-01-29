@@ -24,7 +24,6 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-@Listeners(com.comcast.crm.generic.ListenerUtilty.ListenerImplementation.class)
 public class CreateContactTest extends BaseClass {
 
 	@Test(groups = "smoketest")
@@ -202,4 +201,6 @@ public class CreateContactTest extends BaseClass {
 		
 		soft.assertAll();
 	}
+
+//THis is the added comment 
 }
