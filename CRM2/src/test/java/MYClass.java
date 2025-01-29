@@ -5,7 +5,7 @@ public class MYClass {
 		System.out.println("Hiiiiii From DJ");
 		System.out.println("added new line by santhiya");
 		System.out.println("Added line by Akhilesh")
-		
-		System.out.println("This is a test");
+  Sytem.out.println("added one more line by santhiya");	
+	System.out.println("This is a test");
   }
 }
