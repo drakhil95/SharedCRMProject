@@ -1,13 +1,10 @@
 
 
-import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import com.concast.crm.generic.webdriverutility.WebDriverUtility;
 
 public class LoginPage extends WebDriverUtility
 {
@@ -45,6 +42,10 @@ public class LoginPage extends WebDriverUtility
 		passwordEdt.sendKeys(password);
 		loginBtn.click();
 		
+		
+	}
+	private void waitForPageToLoad(WebDriver driver2) {
+		// TODO Auto-generated method stub
 		
 	}
 	
