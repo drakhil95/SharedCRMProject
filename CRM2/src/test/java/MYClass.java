@@ -4,13 +4,8 @@ public class MYClass {
 		System.out.println("Hiiiiii World");
 		System.out.println("Hiiiiii From DJ");
 		System.out.println("added new line by santhiya");
-<<<<<<< HEAD
-  Sytem.out.println("added one more line by santhiya");
-=======
-=======
-
->>>>>>> branch 'master' of https://github.com/drakhil95/SharedCRMProject.git
-		
-		System.out.println("This is a test");
+		System.out.println("Added line by Akhilesh")
+  Sytem.out.println("added one more line by santhiya");	
+	System.out.println("This is a test");
   }
 }
