@@ -4,6 +4,7 @@ public class MYClass {
 		System.out.println("Hiiiiii World");
 <<<<<<< HEAD
 		System.out.println("added new line by santhiya");
+  Sytem.out.println("added one more line by santhiya");
 =======
 		
 		System.out.println("This is a test");
