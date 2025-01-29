@@ -7,6 +7,7 @@ public class SampleTest {
 	public void create()
 	{
 		System.out.println("Added new class");
+		System.out.println("Added new class");
 	}
 
 }
