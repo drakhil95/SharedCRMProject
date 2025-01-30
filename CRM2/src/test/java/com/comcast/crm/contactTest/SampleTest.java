@@ -10,5 +10,15 @@ public class SampleTest {
 		System.out.println("Added new class");
 	}
 
+	@Test
+	public void delete()
+	{
+		System.out.println("delete");
+	}
+	@Test
+	public void modify()
+	{
+		System.out.println("delete");
+	}
 }
  
